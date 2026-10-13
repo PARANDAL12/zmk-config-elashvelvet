@@ -7,12 +7,12 @@ layers:
   - Esc
   - {t: Sft+9, s: Sft+(}
   - {t: Sft+0, s: Sft+)}
-  - LGUI
-  - {t: \, s: '|'}
-  - PgDn
-  - PgUp
-  - End
   - Home
+  - End
+  - PgUp
+  - PgDn
+  - {t: \, s: '|'}
+  - LGUI
   - $$mdi:apple-keyboard-caps$$
   - B
   - W
@@ -20,12 +20,12 @@ layers:
   - R
   - '&td_t'
   - '&mkp RCLK'
-  - {t: '[', s: '{'}
-  - {t: '''', s: '"'}
-  - O
-  - I
-  - U
   - Y
+  - U
+  - I
+  - O
+  - {t: '''', s: '"'}
+  - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-option$$
   - A
   - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
@@ -33,12 +33,12 @@ layers:
   - F
   - {t: G, h: '$$mdi:apple-keyboard-control$$'}
   - '&mkp MCLK'
-  - {t: ']', s: '}'}
-  - P
-  - L
-  - K
-  - J
   - H
+  - J
+  - K
+  - L
+  - P
+  - {t: ']', s: '}'}
   - $$mdi:backspace-reverse$$
   - '&td_q'
   - Z
@@ -46,22 +46,22 @@ layers:
   - C
   - {t: V, h: EXTRA}
   - '&mkp LCLK'
-  - {t: Sft+/, s: 'Sft+?'}
-  - {t: ., s: '>'}
-  - {t: ',', s: <}
-  - M
-  - N
   - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: Sft+/, s: 'Sft+?'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace-outline$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: GAME, h: to}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: FN}
+  - {t: '$$mdi:backspace-outline$$', type: backspace}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -82,12 +82,12 @@ layers:
   - {t: '9', s: (}
   - {t: '=', s: +}
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - End
-  - $$mdi:arrow-up$$
-  - Home
   - PgUp
+  - Home
+  - $$mdi:arrow-up$$
+  - End
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+Y
   - {t: '-', s: _}
   - {t: '4', s: $}
@@ -95,12 +95,12 @@ layers:
   - {t: '6', s: ^}
   - {t: Sft+=, s: Sft++}
   - '&mkp MCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-right$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-left$$
   - PgDn
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ., s: '>'}
   - {t: '1', s: '!'}
@@ -108,22 +108,22 @@ layers:
   - {t: '3', s: '#'}
   - {t: '0', s: )}
   - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - AC FORWARD
-  - SCRL DOWN
-  - RCLK
-  - SCRL UP
   - AC BACK
+  - SCRL UP
+  - RCLK
+  - SCRL DOWN
+  - AC FORWARD
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCLK
   - {t: MCLK, type: held alternate}
+  - LCLK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   FN:
   - {t: '`', s: '~'}
   - {t: ▽, type: trans}
@@ -144,12 +144,12 @@ layers:
   - Ctl+R
   - Ctl+T
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Ctl+$$mdi:arrow-down$$
-  - $$mdi:arrow-up$$
-  - Ctl+$$mdi:arrow-up$$
   - Ctl+PgUp
+  - Ctl+$$mdi:arrow-up$$
+  - $$mdi:arrow-up$$
+  - Ctl+$$mdi:arrow-down$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Ctl+Y
   - F7
   - F5
@@ -157,12 +157,12 @@ layers:
   - Ctl+F
   - Ctl+G
   - '&mkp MCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-right$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-left$$
   - Ctl+PgDn
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-right$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F4
   - F8
@@ -170,12 +170,12 @@ layers:
   - {t: Alt+3, s: Alt+#}
   - Alt+F11
   - '&mkp LCLK'
+  - AC BACK
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - AC FORWARD
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - AC BACK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,8 +183,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   GAME:
   - Esc
