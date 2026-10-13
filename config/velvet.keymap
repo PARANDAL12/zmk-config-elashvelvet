@@ -85,101 +85,101 @@
         BASE {
             label = "BASE";
             bindings = <
-            &kp SEMI &kp LS(SQT) &kp FSLH &kp ESC &kp LS(N9) &kp LS(N0) &kp LGUI &kp BSLH &kp PAGE_DOWN &kp PAGE_UP &kp END &kp HOME
-            &kp CAPS &kp B &kp W &kp E &kp R &td_t &mkp RCLK &kp LBKT &kp SQT &kp O &kp I &kp U &kp Y
-            &kp RALT &kp A &mt LSHFT S &kp D &kp F &mt LCTRL G &mkp MCLK &kp RBKT &kp P &kp L &kp K &kp J &kp H
-            &kp DEL &td_q &kp Z &kp X &kp C &lt 4 V &mkp LCLK &kp LS(FSLH) &kp DOT &kp COMMA &kp M &kp N &kp B
-            &kp RCTRL &kp LALT &kp BSPC &lt 2 SPACE &lt 1 ENTER &tog GAME &sk LCTRL &kp BSPC &lt 2 SPACE &lt 1 ENTER
+            &kp SEMI  &kp LS(SQT)  &kp FSLH  &kp ESC  &kp LS(N9)  &kp LS(N0)  &kp HOME &kp END  &kp PAGE_UP  &kp PAGE_DOWN  &kp BSLH  &kp LGUI
+            &kp CAPS  &kp B  &kp W  &kp E  &kp R  &td_t  &mkp RCLK  &kp Y &kp U  &kp I  &kp O  &kp SQT  &kp LBKT
+            &kp RALT  &kp A  &mt LSHFT S  &kp D  &kp F  &mt LCTRL G  &mkp MCLK  &kp H &kp J  &kp K  &kp L  &kp P  &kp RBKT
+            &kp DEL  &td_q  &kp Z  &kp X  &kp C  &lt 4 V  &mkp LCLK  &kp B &kp N  &kp M  &kp COMMA  &kp DOT  &kp LS(FSLH)
+            &kp RCTRL  &kp LALT  &kp BSPC  &lt 2 SPACE  &lt 1 ENTER  &tog GAME  &lt 1 ENTER &lt 2 SPACE  &kp BSPC  &sk LCTRL
             >;
         };
         NUM {
             label = "NUM";
             bindings = <
-            &trans &trans &trans &kp GRAVE &trans &trans &trans &trans &trans &trans &trans &trans
-            &kp LC(N) &kp COMMA &kp N7 &kp N8 &kp N9 &kp EQUAL &mkp RCLK &trans &trans &kp END &kp UP_ARROW &kp HOME &kp PAGE_UP
-            &kp LC(Y) &kp MINUS &kp N4 &kp N5 &kp N6 &kp LS(EQUAL) &mkp MCLK &trans &trans &kp RIGHT_ARROW &kp DOWN_ARROW &kp LEFT_ARROW &kp PAGE_DOWN
-            &trans &kp DOT &kp N1 &kp N2 &kp N3 &kp N0 &mkp LCLK &trans &kp AC_FORWARD &kp SCRL_DOWN &kp RCLK &kp SCRL_UP &kp AC_BACK
-            &trans &trans &trans &trans &trans &trans &trans &trans &kp LCLK &kp MCLK
+            &trans  &trans  &trans  &kp GRAVE  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &kp LC(N)  &kp COMMA  &kp N7  &kp N8  &kp N9  &kp EQUAL  &mkp RCLK  &kp PAGE_UP &kp HOME  &kp UP_ARROW  &kp END  &trans  &trans
+            &kp LC(Y)  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp LS(EQUAL)  &mkp MCLK  &kp PAGE_DOWN &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+            &trans  &kp DOT  &kp N1  &kp N2  &kp N3  &kp N0  &mkp LCLK  &kp AC_BACK &kp SCRL_UP  &kp RCLK  &kp SCRL_DOWN  &kp AC_FORWARD  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &kp MCLK &kp LCLK  &trans  &trans
             >;
         };
         FN {
             label = "FN";
             bindings = <
-            &kp GRAVE &trans &kp INS &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &kp LC(N) &kp F1 &kp F2 &kp F3 &kp LC(R) &kp LC(T) &mkp RCLK &trans &trans &kp LC(DOWN) &kp UP &kp LC(UP) &kp LC(PAGE_UP)
-            &kp LC(Y) &kp F7 &kp F5 &kp F6 &kp LC(F) &kp LC(G) &mkp MCLK &trans &trans &kp RIGHT &kp DOWN &kp LEFT &kp LC(PAGE_DOWN)
-            &trans &kp F4 &kp F8 &kp F9 &kp LA(N3) &kp LA(F11) &mkp LCLK &trans &kp AC_FORWARD &trans &trans &trans &kp AC_BACK
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &kp GRAVE  &trans  &kp INS  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &kp LC(N)  &kp F1  &kp F2  &kp F3  &kp LC(R)  &kp LC(T)  &mkp RCLK  &kp LC(PAGE_UP) &kp LC(UP)  &kp UP  &kp LC(DOWN)  &trans  &trans
+            &kp LC(Y)  &kp F7  &kp F5  &kp F6  &kp LC(F)  &kp LC(G)  &mkp MCLK  &kp LC(PAGE_DOWN) &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+            &trans  &kp F4  &kp F8  &kp F9  &kp LA(N3)  &kp LA(F11)  &mkp LCLK  &kp AC_BACK &trans  &trans  &trans  &kp AC_FORWARD  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         GAME {
             label = "GAME";
             bindings = <
-            &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &trans &trans &trans &trans &trans
-            &kp TAB &kp Q &kp W &kp E &kp R &kp T &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &kp LSHFT &kp A &kp S &kp D &kp F &kp G &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &kp LCTRL &kp B &kp Z &kp X &kp C &kp V &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &kp N &kp M &kp BSPC &kp SPACE &kp ENTER &tog GAME &trans &trans &trans &trans
+            &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans &trans  &trans  &trans  &trans  &trans
+            &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &kp LSHFT  &kp A  &kp S  &kp D  &kp F  &kp G  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &kp LCTRL  &kp B  &kp Z  &kp X  &kp C  &kp V  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &kp N  &kp M  &kp BSPC  &kp SPACE  &kp ENTER  &tog GAME  &trans &trans  &trans  &trans
             >;
         };
         EXTRA {
             label = "EXTRA";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &kp B &kp O &kp I &kp U &kp Y &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &kp P &kp L &kp K &kp J &kp H &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &kp DOT &kp COMMA &kp M &kp N &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &kp B  &kp O  &kp I  &kp U  &kp Y  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &kp P  &kp L  &kp K  &kp J  &kp H  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &kp DOT  &kp COMMA  &kp M  &kp N  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         LAYER5 {
             label = "LAYER5";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &kp PAGE_DOWN &kp UP &kp PAGE_UP &trans &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &kp LEFT &kp DOWN &kp RIGHT &trans &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &kp PAGE_DOWN  &kp UP  &kp PAGE_UP  &trans  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         LAYER6 {
             label = "LAYER6";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         LAYER7 {
             label = "LAYER7";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         LAYER8 {
             label = "LAYER8";
             bindings = <
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
         RESET {
             label = "RESET";
             bindings = <
-            &bootloader &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp RCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp MCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &mkp LCLK &trans &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &bootloader  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans &trans  &trans  &trans  &trans  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans &trans  &trans  &trans
             >;
         };
     };
