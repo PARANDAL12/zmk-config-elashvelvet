@@ -82,10 +82,10 @@ layers:
   - {t: '9', s: (}
   - {t: '=', s: +}
   - '&mkp RCLK'
-  - PgUp
-  - Home
+  - Ctl+PgUp
+  - Ctl+$$mdi:arrow-up$$
   - $$mdi:arrow-up$$
-  - End
+  - Ctl+$$mdi:arrow-down$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Y
@@ -95,7 +95,7 @@ layers:
   - {t: '6', s: ^}
   - {t: Sft+=, s: Sft++}
   - '&mkp MCLK'
-  - PgDn
+  - Ctl+PgDn
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
@@ -108,20 +108,20 @@ layers:
   - {t: '3', s: '#'}
   - {t: '0', s: )}
   - '&mkp LCLK'
-  - AC BACK
-  - SCRL UP
-  - RCLK
-  - SCRL DOWN
-  - AC FORWARD
+  - Home
+  - PgUp
+  - '&msc SCRL_DOWN'
+  - PgDn
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {type: held alternate}
-  - MCLK
-  - LCLK
+  - {t: '&mkp LCLK', type: held alternate}
+  - '&mkp MCLK'
+  - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FN:
@@ -170,11 +170,11 @@ layers:
   - {t: Alt+3, s: Alt+#}
   - Alt+F11
   - '&mkp LCLK'
-  - AC BACK
+  - Home
+  - PgUp
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - AC FORWARD
+  - PgDn
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
