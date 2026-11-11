@@ -218,22 +218,22 @@
         NUM {
             label = "NUM";
             bindings = <
-&trans     &trans     &trans  &kp GRAVE  &trans  &trans                    &trans         &trans          &trans          &trans           &trans          &trans
-&kp LC(N)  &kp COMMA  &kp N7  &kp N8     &kp N9  &kp EQUAL      &mkp RCLK  &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &trans          &trans
-&kp LC(Y)  &kp MINUS  &kp N4  &kp N5     &kp N6  &kp LS(EQUAL)  &mkp MCLK  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans          &trans
-&trans     &kp DOT    &kp N1  &kp N2     &kp N3  &kp N0         &mkp LCLK  &kp AC_BACK    &kp SCRL_UP     &kp RCLK        &kp SCRL_DOWN    &kp AC_FORWARD  &trans
-           &trans     &trans  &trans     &trans  &trans                    &trans         &kp MCLK        &kp LCLK        &trans           &trans
+&trans     &trans     &trans  &kp GRAVE  &trans  &trans                    &trans             &trans            &trans          &trans              &trans   &trans
+&kp LC(N)  &kp COMMA  &kp N7  &kp N8     &kp N9  &kp EQUAL      &mkp RCLK  &kp LC(PAGE_UP)    &kp LC(UP_ARROW)  &kp UP_ARROW    &kp LC(DOWN_ARROW)  &trans   &trans
+&kp LC(Y)  &kp MINUS  &kp N4  &kp N5     &kp N6  &kp LS(EQUAL)  &mkp MCLK  &kp LC(PAGE_DOWN)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW     &trans   &trans
+&trans     &kp DOT    &kp N1  &kp N2     &kp N3  &kp N0         &mkp LCLK  &kp HOME           &kp PAGE_UP       &msc SCRL_DOWN  &kp PAGE_DOWN       &kp END  &trans
+           &trans     &trans  &trans     &trans  &trans                    &mkp LCLK          &mkp MCLK         &mkp RCLK       &trans              &trans
             >;
         };
 
         FN {
             label = "FN";
             bindings = <
-&kp GRAVE  &trans  &kp INS  &trans  &trans      &trans                  &trans             &trans      &trans    &trans        &trans          &trans
-&kp LC(N)  &kp F1  &kp F2   &kp F3  &kp LC(R)   &kp LC(T)    &mkp RCLK  &kp LC(PAGE_UP)    &kp LC(UP)  &kp UP    &kp LC(DOWN)  &trans          &trans
-&kp LC(Y)  &kp F7  &kp F5   &kp F6  &kp LC(F)   &kp LC(G)    &mkp MCLK  &kp LC(PAGE_DOWN)  &kp LEFT    &kp DOWN  &kp RIGHT     &trans          &trans
-&trans     &kp F4  &kp F8   &kp F9  &kp LA(N3)  &kp LA(F11)  &mkp LCLK  &kp AC_BACK        &trans      &trans    &trans        &kp AC_FORWARD  &trans
-           &trans  &trans   &trans  &trans      &trans                  &trans             &trans      &trans    &trans        &trans
+&kp GRAVE  &trans  &kp INS  &trans  &trans      &trans                  &trans             &trans       &trans    &trans         &trans   &trans
+&kp LC(N)  &kp F1  &kp F2   &kp F3  &kp LC(R)   &kp LC(T)    &mkp RCLK  &kp LC(PAGE_UP)    &kp LC(UP)   &kp UP    &kp LC(DOWN)   &trans   &trans
+&kp LC(Y)  &kp F7  &kp F5   &kp F6  &kp LC(F)   &kp LC(G)    &mkp MCLK  &kp LC(PAGE_DOWN)  &kp LEFT     &kp DOWN  &kp RIGHT      &trans   &trans
+&trans     &kp F4  &kp F8   &kp F9  &kp LA(N3)  &kp LA(F11)  &mkp LCLK  &kp HOME           &kp PAGE_UP  &trans    &kp PAGE_DOWN  &kp END  &trans
+           &trans  &trans   &trans  &trans      &trans                  &trans             &trans       &trans    &trans         &trans
             >;
         };
 
