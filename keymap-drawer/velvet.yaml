@@ -57,11 +57,11 @@ layers:
   - {t: '$$mdi:backspace-outline$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: GAME, h: to}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: FN}
   - {t: '$$mdi:backspace-outline$$', type: backspace}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: GAME, h: to}
   NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -119,8 +119,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: MCLK, type: held alternate}
+  - {type: held alternate}
+  - MCLK
   - LCLK
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -182,8 +182,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   GAME:
