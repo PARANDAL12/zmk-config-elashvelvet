@@ -6,6 +6,7 @@
  * Known Vial-only features that need separate reimplementation are documented in KEYMAP_MIGRATION_NOTES.md.
  */
 
+/* Rebuild trigger: Caps Lock font compatibility fix in Prospector module. */
 #define BASE 0
 #define NUM 1
 #define FN 2
@@ -31,6 +32,31 @@
 };
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+
+/ {
+    /* Keep mouse-side controls and center clicks from dismissing auto-mouse. */
+    zip_mouse_temp_layer: zip_mouse_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        excluded-positions = <
+            6 7 8 9 10 11
+            18
+            19 20 21 22 23 24
+            31
+            32 33 34 35 36 37
+            44
+            45 46 47 48 49 50
+            56 57 58 59 60
+        >;
+    };
+};
+
+&trackball_listener {
+    status = "okay";
+    /* Preserve DYA Studio runtime control, then scale pointer movement to 80%,
+       and enable the 700 ms automatic mouse layer. */
+    input-processors = <&mouse_runtime_input_processor &zip_xy_scaler 4 5 &zip_mouse_temp_layer EXTRA 700>;
+};
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
@@ -293,6 +319,7 @@
         compatible = "zmk,keymap";
 
         BASE {
+            display-name = "BASE";
             label = "BASE";
             bindings = <
 &aholdtap LS(SEMI) SEMI  &aholdtap LS(APOS) APOS  &holdtap FSLH TILDE  &kp ESC   &kp LS(N9)   &kp LS(N0)              &kp HOME     &kp END      &kp PAGE_UP    &kp PAGE_DOWN  &kp BSLH  &kp LGUI
@@ -304,6 +331,7 @@
         };
 
         NUM {
+            display-name = "NUM";
             label = "NUM";
             bindings = <
 &trans     &trans     &trans                     &trans                     &trans                     &trans                    &trans             &trans            &trans          &trans              &trans   &trans
@@ -315,6 +343,7 @@
         };
 
         FN {
+            display-name = "FN";
             label = "FN";
             bindings = <
 &kp GRAVE  &trans  &kp INS  &trans  &trans      &trans                  &trans             &trans       &trans     &trans         &trans   &trans
@@ -326,6 +355,7 @@
         };
 
         GAME {
+            display-name = "GAME";
             label = "GAME";
             bindings = <
 &kp ESC    &kp N1  &kp N2  &kp N3    &kp N4     &kp N5                &trans     &trans  &trans  &trans  &trans  &trans
@@ -337,28 +367,31 @@
         };
 
         EXTRA {
-            label = "EXTRA";
+            display-name = "MOUSE";
+            label = "MOUSE";
             bindings = <
-&trans  &trans   &trans     &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp B    &kp O      &kp I   &kp U   &kp Y   &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp P    &kp L      &kp K   &kp J   &kp H   &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DOT  &kp COMMA  &kp M   &kp N   &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans   &trans     &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&kp RIGHT_ALT  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &mkp MCLK  &mkp MB5  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt 5 B  &mkp MB4  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans             &trans  &trans  &mkp RCLK  &trans  &mkp LCLK
             >;
         };
 
-        LAYER5 {
-            label = "LAYER5";
+        SCROLL {
+            display-name = "SCROLL";
+            label = "SCROLL";
             bindings = <
-&trans  &trans  &trans         &trans    &trans       &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT       &kp DOWN  &kp RIGHT    &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &trans    &trans       &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans         &trans    &trans       &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         LAYER6 {
+            display-name = "LAYER6";
             label = "LAYER6";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
@@ -370,6 +403,7 @@
         };
 
         LAYER7 {
+            display-name = "LAYER7";
             label = "LAYER7";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
@@ -381,6 +415,7 @@
         };
 
         LAYER8 {
+            display-name = "LAYER8";
             label = "LAYER8";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
@@ -392,6 +427,7 @@
         };
 
         RESET {
+            display-name = "RESET";
             label = "RESET";
             bindings = <
 &bootloader  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
