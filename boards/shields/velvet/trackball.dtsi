@@ -64,7 +64,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         /* DYA runtime control + 80% pointer scale + 700 ms auto-mouse. */
-        input-processors = <&mouse_runtime_input_processor &zip_xy_scaler 4 5 &zip_mouse_temp_layer EXTRA 700>;
+        input-processors = <&mouse_runtime_input_processor &zip_xy_scaler 4 5 &zip_mouse_temp_layer 4 700>;
 
         scroller {
             layers = <5>;
